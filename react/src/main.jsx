@@ -7,14 +7,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Login from './pages/Login.jsx';
-import JobList from './pages/JobList.jsx';
-import JobDetail from './pages/JobDetail.jsx';
+import List from './pages/List.jsx';
+import Detail from './pages/Detail.jsx';
+import SignUp from './pages/SignUp.jsx';
 
 const router = createBrowserRouter([
   { path: "/", element: <Login /> },
   { path: "/login", element: <Login /> },
-  { path: "/job-list", element: <JobList /> },
-  { path: "/job-detail/:id", element: <JobDetail /> },
+  { path: "/sign-up", element: <SignUp /> },
+  { path: "/list", element: <List /> },
+  { path: "/detail/:id", element: <Detail /> },
 ]);
 
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 22, 2024 at 01:47 PM
+-- Generation Time: Aug 22, 2024 at 10:34 PM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -44,12 +44,9 @@ CREATE TABLE `career_history` (
 --
 
 INSERT INTO `career_history` (`id`, `user_id`, `company`, `position`, `last_salary`, `year`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'TechCorp', 'Junior Developer', 60000, 2015, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(2, 1, 'InnovateSoft', 'Senior Developer', 85000, 2018, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(3, 1, 'FutureTech', 'Lead Developer', 110000, 2021, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(4, 2, 'DesignHub', 'Junior Designer', 55000, 2016, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(5, 2, 'CreativeSolutions', 'Senior Designer', 75000, 2019, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(6, 2, 'ArtisticVisions', 'Art Director', 95000, 2022, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(4, 2, 'DesignHub', 'Junior Designer', 55000, 2016, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(5, 2, 'CreativeSolutions', 'Senior Designer', 75000, 2019, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(6, 2, 'ArtisticVisions', 'Art Director', 95000, 2022, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
 (7, 3, 'GlobalCorp', 'Team Lead', 80000, 2012, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (8, 3, 'MegaEnterprises', 'Department Manager', 100000, 2015, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (9, 3, 'InnovateInc', 'Senior Manager', 120000, 2018, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
@@ -73,7 +70,11 @@ INSERT INTO `career_history` (`id`, `user_id`, `company`, `position`, `last_sala
 (27, 9, 'WealthManagers', 'Finance Manager', 102000, 2017, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (28, 10, 'ServiceFirst', 'Customer Service Rep', 45000, 2018, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (29, 10, 'ClientCare', 'Senior Customer Service Rep', 55000, 2020, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(30, 10, 'CustomerSuccess', 'Customer Service Team Lead', 70000, 2022, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL);
+(30, 10, 'CustomerSuccess', 'Customer Service Team Lead', 70000, 2022, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(35, 1, 'Beach Guard LTD', 'Fullstack Developer', 0, 2001, '2024-08-22 19:51:49', NULL, NULL),
+(36, 2, 'DesignHub', 'Junior Designer', 55000, 2016, '2024-08-22 20:33:20', NULL, NULL),
+(37, 2, 'CreativeSolutions', 'Senior Designer', 75000, 2019, '2024-08-22 20:33:20', NULL, NULL),
+(38, 2, 'ArtisticVisions', 'Art Director', 95000, 2022, '2024-08-22 20:33:20', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -97,12 +98,9 @@ CREATE TABLE `courses` (
 --
 
 INSERT INTO `courses` (`id`, `user_id`, `title`, `certification`, `year`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'Advanced Python Programming', 'YES', 2018, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(2, 1, 'Web Development with React', 'YES', 2019, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(3, 1, 'Data Structures and Algorithms', 'NO', 2020, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(4, 2, 'Adobe Creative Suite Masterclass', 'YES', 2017, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(5, 2, 'UI/UX Design Principles', 'YES', 2018, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(6, 2, 'Design Thinking Workshop', 'NO', 2019, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(4, 2, 'Adobe Creative Suite Masterclass', 'YES', 2017, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(5, 2, 'UI/UX Design Principles', 'YES', 2018, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(6, 2, 'Design Thinking Workshop', 'NO', 2019, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
 (7, 3, 'Leadership and Management', 'YES', 2015, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (8, 3, 'Agile Project Management', 'YES', 2016, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (9, 3, 'Business Strategy and Innovation', 'NO', 2017, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
@@ -126,7 +124,12 @@ INSERT INTO `courses` (`id`, `user_id`, `title`, `certification`, `year`, `creat
 (27, 9, 'Blockchain in Finance', 'NO', 2016, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (28, 10, 'Customer Service Excellence', 'YES', 2019, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (29, 10, 'Conflict Resolution in the Workplace', 'YES', 2020, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(30, 10, 'Emotional Intelligence at Work', 'NO', 2021, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL);
+(30, 10, 'Emotional Intelligence at Work', 'NO', 2021, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(36, 1, 'Robotic', '', 2020, '2024-08-22 19:51:49', NULL, NULL),
+(37, 1, 'Telekhinesis', '', 2021, '2024-08-22 19:51:49', NULL, NULL),
+(38, 2, 'Adobe Creative Suite Masterclass', 'YES', 2017, '2024-08-22 20:33:19', NULL, NULL),
+(39, 2, 'UI/UX Design Principles', 'YES', 2018, '2024-08-22 20:33:19', NULL, NULL),
+(40, 2, 'Design Thinking Workshop', 'NO', 2019, '2024-08-22 20:33:20', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -152,12 +155,9 @@ CREATE TABLE `educations` (
 --
 
 INSERT INTO `educations` (`id`, `user_id`, `level`, `institution`, `major`, `graduation_year`, `gpa`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 1, 'Bachelor', 'New York University', 'Computer Science', 2012, 3.7, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(2, 1, 'Master', 'Columbia University', 'Software Engineering', 2014, 3.8, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(3, 1, 'Certificate', 'Coursera', 'Machine Learning', 2016, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(4, 2, 'Bachelor', 'UCLA', 'Graphic Design', 2014, 3.6, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(5, 2, 'Associate', 'Santa Monica College', 'Art', 2010, 3.5, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(6, 2, 'Certificate', 'Adobe', 'UX Design', 2015, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(4, 2, 'Bachelor', 'UCLA', 'Graphic Design', 2014, 3.6, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(5, 2, 'Associate', 'Santa Monica College', 'Art', 2010, 3.5, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
+(6, 2, 'Certificate', 'Adobe', 'UX Design', 2015, 4, '2024-08-22 20:33:19', '2024-08-22 18:20:47', '2024-08-23 03:33:19'),
 (7, 3, 'Bachelor', 'University of Chicago', 'Business Administration', 2007, 3.9, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (8, 3, 'MBA', 'Northwestern University', 'Management', 2010, 3.8, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (9, 3, 'Certificate', 'PMI', 'Project Management', 2012, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
@@ -181,7 +181,13 @@ INSERT INTO `educations` (`id`, `user_id`, `level`, `institution`, `major`, `gra
 (27, 9, 'CPA', 'Texas State Board of Public Accountancy', 'Accounting', 2012, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (28, 10, 'Associate', 'De Anza College', 'Liberal Arts', 2015, 3.5, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
 (29, 10, 'Bachelor', 'San Jose State University', 'Business', 2017, 3.6, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
-(30, 10, 'Certificate', 'Zendesk', 'Customer Service', 2018, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL);
+(30, 10, 'Certificate', 'Zendesk', 'Customer Service', 2018, 4, '2024-08-22 11:20:47', '2024-08-22 18:20:47', NULL),
+(49, 1, 'Bachelor', 'New York University', 'Computer Science', 2012, 3.7, '2024-08-22 19:51:49', NULL, NULL),
+(50, 1, 'Master', 'Columbia University', 'Software Engineering', 2014, 3.8, '2024-08-22 19:51:49', NULL, NULL),
+(51, 1, 'Certificate', 'Coursera', 'Machine Learning', 2016, 4, '2024-08-22 19:51:49', NULL, NULL),
+(52, 2, 'Bachelor', 'UCLA', 'Graphic Design', 2014, 3.6, '2024-08-22 20:33:19', NULL, NULL),
+(53, 2, 'Associate', 'Santa Monica College', 'Art', 2010, 3.5, '2024-08-22 20:33:19', NULL, NULL),
+(54, 2, 'Certificate', 'Adobe', 'UX Design', 2015, 4, '2024-08-22 20:33:19', NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -192,9 +198,11 @@ INSERT INTO `educations` (`id`, `user_id`, `level`, `institution`, `major`, `gra
 CREATE TABLE `users` (
   `id` int(20) NOT NULL,
   `username` varchar(200) DEFAULT NULL,
+  `applied_position` varchar(256) DEFAULT NULL,
+  `password` varchar(256) NOT NULL,
   `full_name` varchar(255) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
-  `role` varchar(200) DEFAULT NULL,
+  `role` enum('admin','employee','candidate','') DEFAULT NULL,
   `register_number` int(20) DEFAULT NULL,
   `place_of_birth` varchar(200) DEFAULT NULL,
   `date_of_birth` datetime DEFAULT NULL,
@@ -218,17 +226,20 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username`, `full_name`, `email`, `role`, `register_number`, `place_of_birth`, `date_of_birth`, `sex`, `religion`, `blood_type`, `status`, `register_address`, `current_address`, `phone_number`, `emergency_name`, `skill`, `availibilty_all_office`, `expected_salary`, `created_at`, `updated_at`, `deleted_at`) VALUES
-(1, 'john_doe', 'John Doe', 'john@example.com', 'Developer', 1001, 'New York', '1990-05-15 00:00:00', 'male', 'Christian', 'A', 'single', '123 Main St, NY', '123 Main St, NY', '555-1234', 'Jane Doe', 'Python, JavaScript', 'YES', 75000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(2, 'jane_smith', 'Jane Smith', 'jane@example.com', 'Designer', 1002, 'Los Angeles', '1992-08-20 00:00:00', 'female', 'Buddhist', 'B', 'married', '456 Elm St, LA', '456 Elm St, LA', '555-5678', 'John Smith', 'Photoshop, Illustrator', 'NO', 70000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(3, 'mike_johnson', 'Mike Johnson', 'mike@example.com', 'Manager', 1003, 'Chicago', '1985-03-10 00:00:00', 'male', 'Muslim', 'O', 'married', '789 Oak St, CH', '789 Oak St, CH', '555-9012', 'Sarah Johnson', 'Leadership, Project Management', 'YES', 90000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(4, 'emily_brown', 'Emily Brown', 'emily@example.com', 'Analyst', 1004, 'Houston', '1993-11-25 00:00:00', 'female', 'Hindu', 'AB', 'single', '101 Pine St, HO', '101 Pine St, HO', '555-3456', 'David Brown', 'Data Analysis, SQL', 'YES', 65000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(5, 'chris_wilson', 'Chris Wilson', 'chris@example.com', 'Engineer', 1005, 'Phoenix', '1988-07-05 00:00:00', 'male', 'Jewish', 'A', 'single', '202 Cedar St, PH', '202 Cedar St, PH', '555-7890', 'Lisa Wilson', 'Java, C++', 'NO', 80000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(6, 'sarah_lee', 'Sarah Lee', 'sarah@example.com', 'HR Specialist', 1006, 'Philadelphia', '1991-09-30 00:00:00', 'female', 'Christian', 'B', 'married', '303 Birch St, PH', '303 Birch St, PH', '555-2345', 'Tom Lee', 'Recruiting, Employee Relations', 'YES', 70000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(7, 'david_taylor', 'David Taylor', 'david@example.com', 'Sales Rep', 1007, 'San Antonio', '1987-01-18 00:00:00', 'male', 'Atheist', 'O', 'single', '404 Maple St, SA', '404 Maple St, SA', '555-6789', 'Emma Taylor', 'Negotiation, CRM', 'YES', 75000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(8, 'lisa_anderson', 'Lisa Anderson', 'lisa@example.com', 'Marketing Specialist', 1008, 'San Diego', '1994-04-12 00:00:00', 'female', 'Buddhist', 'A', 'single', '505 Walnut St, SD', '505 Walnut St, SD', '555-0123', 'Mark Anderson', 'Social Media, Content Creation', 'NO', 68000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(9, 'robert_martinez', 'Robert Martinez', 'robert@example.com', 'Accountant', 1009, 'Dallas', '1986-12-07 00:00:00', 'male', 'Catholic', 'AB', 'married', '606 Chestnut St, DA', '606 Chestnut St, DA', '555-4567', 'Maria Martinez', 'Financial Analysis, QuickBooks', 'YES', 72000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
-(10, 'amanda_thomas', 'Amanda Thomas', 'amanda@example.com', 'Customer Service Rep', 1010, 'San Jose', '1995-06-22 00:00:00', 'female', 'Hindu', 'B', 'single', '707 Sycamore St, SJ', '707 Sycamore St, SJ', '555-8901', 'James Thomas', 'Communication, Problem Solving', 'YES', 60000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL);
+INSERT INTO `users` (`id`, `username`, `applied_position`, `password`, `full_name`, `email`, `role`, `register_number`, `place_of_birth`, `date_of_birth`, `sex`, `religion`, `blood_type`, `status`, `register_address`, `current_address`, `phone_number`, `emergency_name`, `skill`, `availibilty_all_office`, `expected_salary`, `created_at`, `updated_at`, `deleted_at`) VALUES
+(1, 'john_doe', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'John Doe', 'john@example.com', 'admin', 1015, 'New York', '2024-08-03 06:00:00', 'male', 'Christian', 'A', 'married', '123 Main St, NY', '123 Main St, NY', '555-1234', 'Jane Doe', 'Python, JavaScript', 'YES', 75000, '2024-08-22 18:20:22', '2024-08-23 02:51:49', NULL),
+(2, 'jane_smith', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Jane Smith', 'jane@example.com', 'admin', 1002, 'Los Angeles', '1992-08-19 17:00:00', 'female', 'Buddhist', 'B', 'married', '456 Elm St, LA', '456 Elm St, LA', '555-5678', 'John Smith', 'Photoshop, Illustrator', 'NO', 70000, '2024-08-22 18:20:22', '2024-08-23 03:33:19', NULL),
+(3, 'mike_johnson', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Mike Johnson', 'mike@example.com', 'candidate', 1003, 'Chicago', '1985-03-10 00:00:00', 'male', 'Muslim', 'O', 'married', '789 Oak St, CH', '789 Oak St, CH', '555-9012', 'Sarah Johnson', 'Leadership, Project Management', 'YES', 90000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(4, 'emily_brown', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Emily Brown', 'emily@example.com', 'candidate', 1004, 'Houston', '1993-11-25 00:00:00', 'female', 'Hindu', 'AB', 'single', '101 Pine St, HO', '101 Pine St, HO', '555-3456', 'David Brown', 'Data Analysis, SQL', 'YES', 65000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(5, 'chris_wilson', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Chris Wilson', 'chris@example.com', 'candidate', 1005, 'Phoenix', '1988-07-05 00:00:00', 'male', 'Jewish', 'A', 'single', '202 Cedar St, PH', '202 Cedar St, PH', '555-7890', 'Lisa Wilson', 'Java, C++', 'NO', 80000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(6, 'sarah_lee', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Sarah Lee', 'sarah@example.com', 'candidate', 1006, 'Philadelphia', '1991-09-30 00:00:00', 'female', 'Christian', 'B', 'married', '303 Birch St, PH', '303 Birch St, PH', '555-2345', 'Tom Lee', 'Recruiting, Employee Relations', 'YES', 70000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(7, 'david_taylor', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'David Taylor', 'david@example.com', 'candidate', 1007, 'San Antonio', '1987-01-18 00:00:00', 'male', 'Atheist', 'O', 'single', '404 Maple St, SA', '404 Maple St, SA', '555-6789', 'Emma Taylor', 'Negotiation, CRM', 'YES', 75000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(8, 'lisa_anderson', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Lisa Anderson', 'lisa@example.com', 'candidate', 1008, 'San Diego', '1994-04-12 00:00:00', 'female', 'Buddhist', 'A', 'single', '505 Walnut St, SD', '505 Walnut St, SD', '555-0123', 'Mark Anderson', 'Social Media, Content Creation', 'NO', 68000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(9, 'robert_martinez', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Robert Martinez', 'robert@example.com', 'candidate', 1009, 'Dallas', '1986-12-07 00:00:00', 'male', 'Catholic', 'AB', 'married', '606 Chestnut St, DA', '606 Chestnut St, DA', '555-4567', 'Maria Martinez', 'Financial Analysis, QuickBooks', 'YES', 72000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(10, 'amanda_thomas', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', 'Amanda Thomas', 'amanda@example.com', 'candidate', 1010, 'San Jose', '1995-06-22 00:00:00', 'female', 'Hindu', 'B', 'single', '707 Sycamore St, SJ', '707 Sycamore St, SJ', '555-8901', 'James Thomas', 'Communication, Problem Solving', 'YES', 60000, '2024-08-22 18:20:22', '2024-08-22 18:20:22', NULL),
+(11, 'john_michael', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', NULL, NULL, 'candidate', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-08-23 02:58:43'),
+(12, 'john_michael', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', NULL, NULL, 'candidate', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-08-23 03:00:04'),
+(13, 'johntakpor', 'Fullstack Developer', '5f4dcc3b5aa765d61d8327deb882cf99', NULL, NULL, 'candidate', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, '2024-08-23 03:00:02');
 
 --
 -- Indexes for dumped tables
@@ -269,25 +280,25 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `career_history`
 --
 ALTER TABLE `career_history`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `courses`
 --
 ALTER TABLE `courses`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 
 --
 -- AUTO_INCREMENT for table `educations`
 --
 ALTER TABLE `educations`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(20) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables

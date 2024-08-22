@@ -3,23 +3,23 @@ const router = express.Router();
 const courses = require("../services/Careers");
 
 /* GET programming languages. */
-router.get("/", async function (req, res, next) {
-  try {
-    res.json(await courses.getAll());
-  } catch (err) {
-    console.error(`Get Courses List failed `, err.message);
-    next(err);
-  }
-});
+// router.get("/", async function (req, res, next) {
+//   try {
+//     res.json(await courses.getAll());
+//   } catch (err) {
+//     console.error(`Get Courses List failed `, err.message);
+//     next(err);
+//   }
+// });
 
-router.get("/:id", async function (req, res, next) {
-  try {
-    res.json(await courses.getById(req.params.id));
-  } catch (err) {
-    console.error(`Get Courses failed `, err.message);
-    next(err);
-  }
-});
+// router.get("/:id", async function (req, res, next) {
+//   try {
+//     res.json(await courses.getById(req.params.id));
+//   } catch (err) {
+//     console.error(`Get Courses failed `, err.message);
+//     next(err);
+//   }
+// });
 
 router.post("/", async function (req, res, next) {
   try {

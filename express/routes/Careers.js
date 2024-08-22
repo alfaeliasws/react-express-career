@@ -3,23 +3,23 @@ const router = express.Router();
 const careers = require("../services/Careers");
 
 /* GET programming languages. */
-router.get("/", async function (req, res, next) {
-  try {
-    res.json(await careers.getAll());
-  } catch (err) {
-    console.error(`Get Career History List failed `, err.message);
-    next(err);
-  }
-});
+// router.get("/", async function (req, res, next) {
+//   try {
+//     res.json(await careers.getAll());
+//   } catch (err) {
+//     console.error(`Get Career History List failed `, err.message);
+//     next(err);
+//   }
+// });
 
-router.get("/:id", async function (req, res, next) {
-  try {
-    res.json(await careers.getById(req.params.id));
-  } catch (err) {
-    console.error(`Get Career History failed `, err.message);
-    next(err);
-  }
-});
+// router.get("/:id", async function (req, res, next) {
+//   try {
+//     res.json(await careers.getById(req.params.id));
+//   } catch (err) {
+//     console.error(`Get Career History failed `, err.message);
+//     next(err);
+//   }
+// });
 
 router.post("/", async function (req, res, next) {
   try {

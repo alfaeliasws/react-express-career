@@ -33,6 +33,7 @@ router.post("/", async function (req, res, next) {
 
 router.put("/:id", async function (req, res, next) {
   try {
+    console.log({userRouter: req.bogy})
     res.json(await users.update(req.params.id, req.body));
   } catch (err) {
     console.error(`Update data failed `, err.message);
